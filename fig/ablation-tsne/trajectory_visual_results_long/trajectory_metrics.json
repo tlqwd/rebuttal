@@ -1,0 +1,14 @@
+{
+  "mean_trajectory_deviation": 0.16714764952659608,
+  "std_trajectory_deviation": 0.04155493095258945,
+  "mean_direction_consistency": 0.9970842456817627,
+  "std_direction_consistency": 0.0018181393971769145,
+  "deviation_metric": "per_dim_rmse",
+  "deviation_formula": "sqrt(mean((pred - gt)^2)) over feature dimensions",
+  "feature_dim": 896,
+  "silhouette_label_source": "trajectory_index",
+  "silhouette_sample_count": 25,
+  "silhouette_num_clusters": 5,
+  "silhouette_score_gt_aligned": -0.03424012288451195,
+  "silhouette_score_pred": -0.0024074185639619827
+}

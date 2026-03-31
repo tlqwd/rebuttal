@@ -1,0 +1,13 @@
+{
+  "script": "ablation_visual/visualize_tsne_trajectory_clear.py",
+  "output_figure_png": "trajectory_visual_results_goal/trajectory_visualization_ablation_rmse_clear.png",
+  "output_figure_pdf": "trajectory_visual_results_goal/trajectory_visualization_ablation_rmse_clear.pdf",
+  "reduction_method": "tsne",
+  "deviation_metric": "per_dim_rmse",
+  "deviation_ratio": 0.8,
+  "silhouette_label_source": "trajectory_index",
+  "silhouette_sample_count": 25,
+  "silhouette_num_clusters": 5,
+  "silhouette_score_gt_aligned": -0.07773219048976898,
+  "silhouette_score_pred": -0.04658995196223259
+}

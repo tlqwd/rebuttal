@@ -1,0 +1,52 @@
+{
+  "trajectory_length": 5,
+  "total_frames": 6,
+  "num_trajectories": 128,
+  "sequential_starts": true,
+  "align_compare_predictions": true,
+  "compare_num_samples": 100,
+  "batch_size": 32,
+  "plot_mse_y_major_step": 0.01,
+  "plot_cosine_y_major_step": 0.0002,
+  "plot_y_min_major_ticks": 5,
+  "time_step": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "teacher_forcing": {
+    "mse": [
+      0.19818784296512604,
+      0.19768132269382477,
+      0.19939681887626648,
+      0.1994917243719101,
+      0.19746533036231995
+    ],
+    "cosine_similarity": [
+      0.9956430643796921,
+      0.9956538677215576,
+      0.9956166744232178,
+      0.9956153631210327,
+      0.995659589767456
+    ]
+  },
+  "autoregressive": {
+    "mse": [
+      0.19818784296512604,
+      0.1984526813030243,
+      0.1979638636112213,
+      0.2016565203666687,
+      0.20633456110954285
+    ],
+    "cosine_similarity": [
+      0.9956430643796921,
+      0.9956382513046265,
+      0.9956487417221069,
+      0.995567262172699,
+      0.9954672455787659
+    ]
+  },
+  "note": "Frame 1 is conditioning; metrics from time step 1 onward vs GT at that frame. At step 1, TF and AR coincide. If align_compare_predictions is true, step-1 MSE/cosine match compare_predictions.py batch-mean aggregation (same as average_metrics.json for mse/cosine_similarity)."
+}
